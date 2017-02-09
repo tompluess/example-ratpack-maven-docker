@@ -55,6 +55,19 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker.maven.plugin.fabric8.version}</version>
+                <configuration>
+                    <images>
+                        <image>
+                            <name>ch.skyr/ratpack</name>
+                            <build>
+                                <dockerFileDir>.</dockerFileDir>
+                                <assembly>
+                                    <descriptorRef>artifact-with-dependencies</descriptorRef>
+                                </assembly>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
                 <executions>
                     <execution>
                         <id>docker.build</id>
