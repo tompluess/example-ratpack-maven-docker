@@ -1,5 +1,5 @@
-build
-out
 *.ipr
 *.iml
 *.iws
+.idea
+target
