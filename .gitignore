@@ -1,5 +1,5 @@
 *.ipr
-*.iml
 *.iws
-.idea
 target
+/.idea/workspace.xml
+/.idea/libraries/
